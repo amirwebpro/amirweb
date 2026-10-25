@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طراحی و توسعه وب امیر</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, 'Vazir', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* هدر و معرفی برند */
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .logo-container {
+      margin-bottom: 12px;
+    }
+
+    .logo-container img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #d4af37;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #d4af37;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: #b0b0b0;
+      font-size: 15px;
+    }
+
+    /* کانتینر اصلی محتوا (پهن در لپ‌تاپ، مناسب موبایل) */
+    .main-container {
+      width: 100%;
+      max-width: 950px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    /* کارت‌های بخش‌های مختلف */
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #2d2d2d;
+      border-top: 4px solid #d4af37;
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h2 {
+      color: #d4af37;
+      font-size: 18px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* استایل لیست خدمات ما */
+    .services-list {
+      list-style: none;
+    }
+
+    .services-list li {
+      background: #282828;
+      border-right: 4px solid #d4af37;
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .services-list li strong {
+      display: block;
+      color: #ffffff;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    /* فرم ثبت سفارش */
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: #dcdcdc;
+    }
+
+    input, textarea {
+      width: 100%;
+      background: #282828;
+      border: 1px solid #3d3d3d;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #d4af37;
+      background: #2c2c2c;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 80px;
+    }
+
+    /* بخش ارتباط مستقیم سروش */
+    .splus-box {
+      width: 100%;
+      max-width: 950px;
+      background: #1a1a1a;
+      border: 2px dashed #d4af37;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .splus-box p {
+      font-size: 15px;
+      color: #e0e0e0;
+      margin-bottom: 15px;
+    }
+
+    .btn-splus {
+      display: inline-block;
+      background: #d4af37;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.2s transform, 0.2s background-color;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-splus:hover {
+      background: #c59f2e;
+      transform: translateY(-2px);
+    }
+
+    /* حالت موبایل */
+    @media (max-width: 768px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- هدر -->
+  <header>
+    <div class="logo-container">
+      <img src="image_gen_487db3a9-a89f-4c34-8854-ab7214c00943_0.webp" alt="لوگو وب امیر">
+    </div>
+    <h1>طراحی و توسعه وب امیر</h1>
+    <p class="subtitle">طراحی انواع صفحات وب، پروژه‌های کامپیوتری و ثبت سفارش آنلاین</p>
+  </header>
+
+  <!-- بخش اصلی (دو ستونه روی لپ‌تاپ، عمودی روی گوشی) -->
+  <div class="main-container">
+    
+    <!-- ستون اول: خدمات و توضیحات کاری -->
+    <div class="card">
+      <h2>🛠️ کارهایی که برای شما انجام می‌دهم</h2>
+      <ul class="services-list">
+        <li>
+          <strong>🌐 طراحی سایت و صفحات اینترنتی</strong>
+          ساخت صفحات وب سبک، شیک، مدرن و متناسب با گوشی و لپ‌تاپ برای معرفی کسب‌وکار، برند یا پروژه‌های شخصی.
+        </li>
+        <li>
+          <strong>🎨 انتخاب رنگ و ظاهر دلخواه شما</strong>
+          هر رنگ، مدل یا استایلی که مد نظرتون باشه رو دقیقاً مطابق سلیقه و درخواست شما اوکی می‌کنیم و می‌سازیم.
+        </li>
+        <li>
+          <strong>⚡ پشتیبانی و تحویل سریع</strong>
+          اجرای دقیق خواسته‌های شما در کمترین زمان ممکن با هماهنگی مستقیم در پیام‌رسان.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ستون دوم: فرم درخواست و اطلاعات -->
+    <div class="card">
+      <h2>📝 مشخصات سفارش شما</h2>
+      <div class="form-group">
+        <label for="name">نام و نام خانوادگی:</label>
+        <input type="text" id="name" placeholder="مثلاً: علی رضایی">
+      </div>
+      <div class="form-group">
+        <label for="phone">شماره همراه یا راه ارتباطی:</label>
+        <input type="text" id="phone" placeholder="۰۹۱۲۰۰۰۰۰۰۰">
+      </div>
+      <div class="form-group">
+        <label for="desc">توضیح کوتاه درباره کار یا پروژه‌تون:</label>
+        <textarea id="desc" placeholder="توضیح دهید چه پروژه‌ای یا چه رنگی مد نظرتان است..."></textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- بخش ارتباط با سروش پلاس -->
+  <div class="splus-box">
+    <p>برای شروع گفتگو، هماهنگی یا ارسال جزئیات سفارشتون روی دکمه زیر بزنید:</p>
+    <a href="https://splus.ir/Amirwebpro" class="btn-splus" target="_blank">
+      💬 ارتباط مستقیم در سروش پلاس (@Amirwebpro)
+    </a>
+  </div>
+
+</body>
+</html>
